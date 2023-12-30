@@ -5,10 +5,6 @@ let listButtons;
 
 textBox.focus();
 
-function removeParent(element) {
-	element.parentElement.remove();
-}
-
 function addElementsToParent(parent) {
 	const li = document.createElement("li");
 	li.textContent = textBox.value;
@@ -20,6 +16,10 @@ function addElementsToParent(parent) {
 	parent.appendChild(li);
 
 	listButtons = document.querySelectorAll(".delete-button");
+}
+
+function removeParent(element) {
+	element.parentElement.remove();
 }
 
 function addListButtonsFunctionality(buttons) {
