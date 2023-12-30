@@ -3,6 +3,8 @@ const textBox = document.querySelector(".container-textbox > input");
 const unorderedList = document.querySelector("ul");
 let listButtons;
 
+textBox.focus();
+
 function removeParent(element) {
 	element.parentElement.remove();
 }
