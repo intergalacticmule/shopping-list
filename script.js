@@ -43,6 +43,7 @@ addButton.addEventListener("click", () => {
         clearInputField(textBox);
         textBox.focus();
     } else {
+        textBox.focus();
         return;
     }
 });
