@@ -10,9 +10,9 @@ function removeParent(element) {
 }
 
 function addElementsToParent(parent) {
-	li = document.createElement("li");
+	const li = document.createElement("li");
 	li.textContent = textBox.value;
-	button = document.createElement("button");
+	const button = document.createElement("button");
 	button.textContent = "Delete";
 	button.classList.add("delete-button");
 
