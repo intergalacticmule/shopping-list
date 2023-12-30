@@ -1,24 +1,23 @@
-container = document.querySelector(".container-textbox");
-addButton = document.querySelector(".container-textbox > button");
-textBox = document.querySelector(".container-textbox > input");
-unorderedList = document.querySelector("ul");
+const container = document.querySelector(".container-textbox");
+const addButton = document.querySelector(".container-textbox > button");
+const textBox = document.querySelector(".container-textbox > input");
+const unorderedList = document.querySelector("ul");
+let listButtons;
 
 addButton.addEventListener("click", () => {
   div = document.createElement("div");
   li = document.createElement("li");
-  button = document.createElement("button");
   li.textContent = textBox.value;
+  button = document.createElement("button");
   button.textContent = "Delete";
+  button.classList.add("delete-button");
 
   div.appendChild(li);
   div.appendChild(button);
   container.appendChild(div);
-});
 
-/* <div>
-        <li></li>
-        <button></button>
-    </div> */
+  listButtons = document.querySelectorAll(".delete-button");
+});
 
 // Add event listener to addButton that adds a div with list element and a button child to unorderedList;
 
