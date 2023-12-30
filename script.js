@@ -25,16 +25,14 @@ function checkUserInput(field) {
 }
 
 addButton.addEventListener("click", () => {
-  div = document.createElement("div");
   li = document.createElement("li");
   li.textContent = textBox.value;
   button = document.createElement("button");
   button.textContent = "Delete";
   button.classList.add("delete-button");
 
-  div.appendChild(li);
-  div.appendChild(button);
-  container.appendChild(div);
+  li.appendChild(button);
+  unorderedList.appendChild(li);
 
   listButtons = document.querySelectorAll(".delete-button");
   addListButtonsFunctionality(listButtons);
