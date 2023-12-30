@@ -5,14 +5,16 @@ const unorderedList = document.querySelector("ul");
 let listButtons;
 
 addButton.addEventListener("click", () => {
+  div = document.createElement("div");
   li = document.createElement("li");
   li.textContent = textBox.value;
   button = document.createElement("button");
   button.textContent = "Delete";
   button.classList.add("delete-button");
 
-  li.appendChild(button);
-  unorderedList.appendChild(li);
+  div.appendChild(li);
+  div.appendChild(button);
+  container.appendChild(div);
 
   listButtons = document.querySelectorAll(".delete-button");
 });
